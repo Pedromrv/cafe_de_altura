@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <title>Café de Altura</title>
+</head>
+
+<body>
+    <header>
+        <div class="flex-centered logo">
+            <span>cafedealtura.com</span>
+            <img src="../assets/images/icons/ps_coffee-hot.png" alt="">
+        </div>
+        <nav>
+            <ul class="flex-centered">
+                <li><a href="../pages/shop.html">Tienda</a></li>
+                <li><a href="">Suscripción</a></li>
+                <li><a href="">Para empresas</a></li>
+                <li><a href="">Sobre nosotros</a></li>
+                <li><a href="">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="flex-centered phone-login-container">
+            <div class="flex-centered phone-container">
+                <img src="../assets/images/icons/phone_icon.png" alt="">
+                <span>+34 919 49 05 18</span>
+            </div>
+            <button type="button" class="grey-button">Iniciar sesión</button>
+        </div>
+        <a href="" class="cart-btn">
+            <img src="../assets/images/icons/cart_icon.png" alt="">
+        </a>
+    </header>
+
+    <main>
+        <section class="flex-column-centered checkout-section">
+
+            <h2 class="h2">Checkout</h2>
+
+            <div class="checkout-container">
+
+                <form action="" class="flex-column-start checkout-form-container">
+
+                    <h3 class="h3">Seleccionar método de pago</h3>
+
+                    <div class="flex-column-start payment-method">
+                        <div class="flex-start debit-card">
+                            <input class="input-radio" type="radio" name="payment-type" value="debit-card">
+                            <label for="payment-type">
+                                <p class="bold-p">Tarjeta de débito</p>
+                                <p class="p">Opción estándar sin seguimiento</p>
+                            </label>
+                        </div>
+                        <div class="flex-column-start debit-card-info">
+                            <div class="flex-column-start debit-card-info-group">
+                                <label class="small-p" for="card-name">Titular</label>
+                                <input class="input-box" type="text" name="card-name" placeholder="Nombre del titular">
+
+                            </div>
+
+                            <div class="flex-column-start debit-card-info-group">
+                                <label class="small-p" for="card-num">Número de la tarjeta</label>
+                                <input class="input-box" type="text" name="card-num" placeholder="1234 1234 1234 1234">
+
+                            </div>
+
+                            <div class="flex-start debit-card-info-group">
+                                <div class="flex-column-start">
+                                    <label class="small-p" for="card-date">Fecha de caducidad</label>
+                                    <input class="input-box" type="text" name="card-date" placeholder="MM / YY">
+                                </div>
+                                <div class="flex-column-start">
+                                    <label class="small-p" for="cvc">CVC</label>
+                                    <input class="input-box" type="text" name="cvc" placeholder="123">
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+                        <div class="divider"></div>
+
+                        <div class="flex-start transfer">
+                            <input class="input-radio" type="radio" name="payment-type" value="transfer">
+                            <label for="payment-type">
+                                <p class="bold-p">Transferencia bancaria a la cuenta ES12 1234 1234 123457890</p>
+                                <p class="p">Será necesario recibir el comprobante de la transferencia para preparar tu
+                                    pedido
+                                </p>
+                            </label>
+                        </div>
+
+                        <div class="divider"></div>
+
+                        <div class="flex-start bizum">
+                            <input class="input-radio" type="radio" name="payment-type" value="bizum">
+                            <label for="payment-type">
+                                <p class="bold-p">Bizum</p>
+                                <img src="../assets/images/icons/bizum_icon.png" alt="">
+                            </label>
+                        </div>
+                    </div>
+
+                    <h3 class="h3">Dirección de envío</h3>
+
+                    <div class="flex-column-start shipping-address">
+                        <div class="flex-column-start">
+                            <label class="small-p" for="name">Nombre</label>
+                            <input class="input-box" type="text" name="name">
+                        </div>
+
+                        <div class="flex-column-start">
+                            <label class="small-p" for="las-name">Apellidos</label>
+                            <input class="input-box" type="text" name="last-name">
+                        </div>
+
+                        <div class="flex-column-start">
+                            <label class="small-p" for="phone">Teléfono</label>
+                            <input class="input-box" type="text" name="phone" placeholder="+34 600 600 600">
+                        </div>
+
+                        <div class="flex-column-start">
+                            <label class="small-p" for="email">Email</label>
+                            <input class="input-box" type="text" name="email">
+                        </div>
+
+                        <div class="flex-column-start">
+                            <label class="small-p" for="country">Country</label>
+                            <select class="input-box" name="country">
+                                <option value="" disabled selected>Seleccionar</option>
+                                <option value="España">España</option>
+                                <option value="Portugal">Portugal</option>
+                            </select>
+                        </div>
+
+                        <div class="flex-start form-city">
+                            <div class="flex-column-center">
+                                <label class="small-p" for="city">Población</label>
+                                <input class="input-box" type="text" name="city">
+                            </div>
+
+                            <div class="flex-column-center">
+                                <label class="small-p" for="post-code">CP</label>
+                                <input class="input-box" type="text" name="post-code" placeholder="123">
+                            </div>
+
+                        </div>
+
+                        <div class="flex-start form-address">
+                            <div class="flex-start">
+                                <div class="flex-column-start">
+                                    <label class="small-p" for="street">Calle</label>
+                                    <input class="input-box" type="text" name="street">
+                                </div>
+
+                                <div class="flex-column-centered">
+                                    <label class="small-p" for="street-number">Nº</label>
+                                    <input class="input-box" type="text" name="street-number">
+                                </div>
+
+                            </div>
+                            <div class="flex-start">
+                                <div>
+                                    <label class="small-p" for="floor">Piso</label>
+                                    <input class="input-box" type="text" name="floor">
+                                </div>
+
+                                <div>
+                                    <label class="small-p" for="door">Puerta</label>
+                                    <input class="input-box" type="text" name="door">
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </form>
+
+                <div class="flex-column-start total-container">
+                    <h3>Total del carrito</h3>
+                    <div class="divider"></div>
+                    <div class="flex-column-start subtotal-details-container">
+                        <div class="subtotal-details">
+                            <p class="p">SUBTOTAL</p>
+                            <p class="bold-p">18,00 €</p>
+                        </div>
+                        <div class="shipping-details">
+                            <p class="p">ENVÍO</p>
+                            <p class="bold-p">GRATIS</p>
+                        </div>
+
+                    </div>
+                    <div class="divider"></div>
+                    <div class="total-details-container">
+                        <p class="bold-p">TOTAL</p>
+                        <div class="total-price">
+                            <p class="bold-p">18,00 €</p>
+                            <p>Incluye 3,78€ de IVA</p>
+                        </div>
+                    </div>
+                    <div class="flex-start total-btns">
+                        <button class="large-button" type="button">Pagar y realizar pedido</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer class="alt-footer">
+        <div class="copyright-container">
+            <p>Todos los derechos reservados - Café de Altura SL - 2022</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
